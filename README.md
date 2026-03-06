@@ -1,19 +1,18 @@
-## Instructions for reproduction
-### 0. Set-up
+## Reproduction
 
-Install the dependencies with this
-```
+### 0. Setup
+```bash
 conda env create -f environment.yml
 conda activate benchmark-data-leakage
 pip install -e .
 ```
 
-Further dependencies that are needed:
-
 ### 1. Preprocessing
-- You need to be able to connect to a posgres ChEMBL database (v36 was used when generating the data, but most earlier versions should be fine)
-- You need to clone https://github.com/openforcefield/protein-ligand-benchmark/tree/0.2.1 (v0.2.1 is required)
-- Run the notebooks/01_*
+Two external dependencies are required:
+- A local PostgreSQL ChEMBL database (v36 was used; earlier versions should work)
+- A local cloned version of [protein-ligand-benchmark v0.2.1](https://github.com/openforcefield/protein-ligand-benchmark/tree/0.2.1)
 
-### 2. Do analysis
-- Run notebooks/02_leakage_analysis.ipynb to produce the table overview and graph for MAPK8
+Then run the notebooks `notebooks/01_*`.
+
+### 2. Analysis
+Run `notebooks/02_leakage_analysis.ipynb` to reproduce the leakage table and MAPK8 figure.
