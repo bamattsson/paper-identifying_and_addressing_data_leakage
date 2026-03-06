@@ -49,3 +49,17 @@ class ChEMBLRequester:
             results.append({k: v for k, v in zip(COL_ORDER, row)})
 
         return results
+
+    def get_chembl_id_to_smiles(
+            self,
+    ) -> list[tuple[str, str]]:
+        GET_SMILES_QUERY = """
+        select md.chembl_id, cs.canonical_smiles
+        from molecule_dictionary md
+        join compound_structures cs on md.molregno = cs.molregno
+        """
+        self.cur.execute(
+            GET_SMILES_QUERY,
+        )
+        rows = self.cur.fetchall()
+        return rows
