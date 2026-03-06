@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "benchmark-data-leakage"
+version = "0.1.0"
+description = "Requirements for data leakage analysis and benchmark construction for affinity prediction"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
