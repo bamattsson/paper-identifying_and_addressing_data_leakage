@@ -1,4 +1,5 @@
-### Set-up
+## Instructions for reproduction
+### 0. Set-up
 
 Install the dependencies with this
 ```
@@ -9,8 +10,10 @@ pip install -e .
 
 Further dependencies that are needed:
 
-#### 01_create_data_split.ipynb
-A postgres ChEMBL database (v36 was used when generating the data, but most earlier versions should be fine)
+### 01. Preprocessing
+- A postgres ChEMBL database (v36 was used when generating the data, but most earlier versions should be fine)
+- You need to clone https://github.com/openforcefield/protein-ligand-benchmark/tree/0.2.1 (v0.2.1 is required)
+- Run the notebooks/01_*
 
-#### 02_extract_FEPp4_data.ipynb
-You need to clone https://github.com/openforcefield/protein-ligand-benchmark/tree/0.2.1 (v0.2.1 is required)
+### 02. Do analysis
+- Run notebooks/02_leakage_analysis.ipynb to produce the table overview and graph for MAPK8
