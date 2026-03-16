@@ -28,18 +28,14 @@ class ChEMBLRequester:
         select cs.accession,
             cs.description,
             cs.organism,
-            cs2.component_synonym as "gene_name",
             cs."sequence"
         from component_sequences cs
-        join component_synonyms cs2 on cs2.component_id = cs.component_id
         where cs.component_type = 'PROTEIN'
-            and cs2.syn_type = 'GENE_SYMBOL'
         """
         COL_ORDER = [
             "uniprot_id",
             "description",
             "organism",
-            "gene_name",
             "sequence",
         ]
         self.cur.execute(
