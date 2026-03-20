@@ -2,17 +2,10 @@ name: benchmark-data-leakage
 
 channels:
   - conda-forge
+  - bioconda
   - defaults
 
 dependencies:
   - python>=3.10
-  - rdkit
-  - numpy
-  - pandas
-  - scipy
-  - matplotlib
-  - seaborn
-  - jupyterlab
-  - tqdm
-  - psycopg2
   - bioconda::mmseqs2
+  - pip

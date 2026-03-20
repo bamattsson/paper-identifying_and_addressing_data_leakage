@@ -8,6 +8,17 @@ name = "benchmark-data-leakage"
 version = "0.1.0"
 description = "Requirements for data leakage analysis and benchmark construction for affinity prediction"
 requires-python = ">=3.10"
+dependencies = [
+    "rdkit",
+    "numpy",
+    "pandas",
+    "scipy",
+    "matplotlib",
+    "seaborn",
+    "jupyterlab",
+    "tqdm",
+    "psycopg2-binary",
+]
 
 [tool.setuptools.packages.find]
 where = ["src"]
