@@ -1,0 +1,4 @@
+host:     # hostname of your PostgreSQL ChEMBL database
+user:     # database username
+password: # database password
+dbname:   # database name (ChEMBL 36 was used; earlier versions should work)

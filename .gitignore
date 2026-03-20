@@ -1,5 +1,6 @@
 data/processed/
 .vscode/
+chembl_db.yaml
 
 #### PYTHON defaults below
 # Byte-compiled / optimized / DLL files
