@@ -1,4 +1,4 @@
-folder_name,ligand_name,smiles,measurement_comment,measurement_doi,measurement_type,measurement_error,measurement_unit,measurement_value,gene_name,uniprot_id,chembl_target_id,pchembl_value,chembl_ligand_id
+folder_name,ligand_name,smiles,measurement_comment,measurement_doi,standard_type,measurement_error,measurement_unit,measurement_value,gene_name,uniprot_id,chembl_target_id,pchembl_value,chembl_ligand_id
 2019-09-23_jnk1,lig_17124-1,CCOc1nc(NC(=O)Cc2cc(OC)c(Br)cc2OC)cc(N)c1C#N,table 1 cmpd 6t,10.1021/jm060199b,ic50,38.0,nM,77.0,MAPK8,P45983,CHEMBL2276,7.113509274827518,CHEMBL382639
 2019-09-23_jnk1,lig_18624-1,CCOc1nc(NC(=O)Cc2ccccc2)cc(N)c1C#N,table 1 cmpd 6e,10.1021/jm060199b,ic50,140.0,nM,570.0,MAPK8,P45983,CHEMBL2276,6.2441251443275085,CHEMBL210861
 2019-09-23_jnk1,lig_18625-1,CCOc1nc(NC(=O)Cc2ccccc2Cl)cc(N)c1C#N,table 1 cmpd 6f,10.1021/jm060199b,ic50,300.0,nM,1100.0,MAPK8,P45983,CHEMBL2276,5.958607314841775,CHEMBL377201
