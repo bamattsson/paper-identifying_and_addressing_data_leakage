@@ -19,6 +19,7 @@ dependencies = [
     "tqdm",
     "psycopg2-binary",
     "pyarrow>=14.0",
+    "biopython",
 ]
 
 [tool.setuptools.packages.find]
