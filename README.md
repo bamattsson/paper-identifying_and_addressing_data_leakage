@@ -1,4 +1,4 @@
-# Critical Assessment of Binding Affinity Benchmarks
+# Identifying and Addressing Data Leakage in Binding Affinity Benchmarks
 
 This repository contains code and data to reproduce the results in the paper. The analysis is split across two pipelines depending on which sections you want to reproduce.
 
@@ -8,9 +8,9 @@ This repository contains code and data to reproduce the results in the paper. Th
 
 | Paper sections | What they cover | Where to go |
 |---|---|---|
-| Sections 3 & 4 | Sequence similarity splits and property biases | [`chembl_analysis/README.md`](chembl_analysis/README.md) |
-| Sections 5 & 6 | FEP+ 4 benchmark and Novelty-Filtered Affinity Benchmark analyses | Continue reading below |
-| NFAB | Reproducing the Novelty-Filtered Affinity Benchmark and the baseline model | [`bamattsson/nfab`](https://github.com/bamattsson/nfab) |
+| Sections 3 & 4 (and first figure in Section 7) | Sequence similarity splits and property biases | [`chembl_analysis/README.md`](chembl_analysis/README.md) |
+| Sections 5 & 6 | FEP+ 4 benchmark and Novelty-Tiered Affinity Benchmark analyses | Continue reading below |
+| Section 7 | Reproducing the Novelty-Tiered Affinity benchmark and the baseline model | Follow README in [`bamattsson/ntab`](https://github.com/bamattsson/ntab), for Mean(Max(Tanimoto similarity)) use commit 97ec529
 
 ---
 
@@ -42,7 +42,7 @@ uv sync
 
 ### 2. Preprocessing
 
-Run the two preprocessing notebooks in order:
+Run the two preprocessing notebooks:
 
 ```
 notebooks/01_extract_FEPp4_data.ipynb   # Extracts FEP+ 4 test data, maps to ChEMBL IDs
