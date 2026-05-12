@@ -9,7 +9,7 @@ This repository contains code and data to reproduce the results in the paper. Th
 | Paper sections | What they cover | Where to go |
 |---|---|---|
 | Sections 3 & 4 (and first figure in Section 7) | Sequence similarity splits and property biases | [`chembl_analysis/README.md`](chembl_analysis/README.md) |
-| Sections 5 & 6 | FEP+ 4 benchmark and Novelty-Tiered Affinity Benchmark analyses | Continue reading below |
+| Sections 5 & 6 | FEP+ 4 benchmark analysis and baselines | Continue reading below |
 | Section 7 | Reproducing the Novelty-Tiered Affinity benchmark and the baseline model | Follow README in [`bamattsson/ntab`](https://github.com/bamattsson/ntab), for Mean(Max(Tanimoto similarity)) use commit 97ec529
 
 ---
