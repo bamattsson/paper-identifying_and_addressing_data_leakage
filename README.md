@@ -1,6 +1,6 @@
 # Identifying and Addressing Data Leakage in Binding Affinity Benchmarks
 
-This repository contains code and data to reproduce the results in the paper. The analysis is split across two pipelines depending on which sections you want to reproduce.
+This repository contains code and data to reproduce the results in [the paper](https://www.biorxiv.org/content/10.64898/2026.06.29.735309v1). The analysis is split across two pipelines depending on which sections you want to reproduce.
 
 ---
 
